@@ -1,0 +1,80 @@
+<!-- page/RegistroTarjeta.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmz Prime - Registro de Tarjeta</title>
+    <link rel="stylesheet" href="../estilo/RegistroTarjeta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar">
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo-title">Filmz Prime</div>
+        <ul class="nav-links centered">
+            <li><a href="../page/Home.html.html">Home</a></li>
+            <li><a href="../page/Pelicula.html.html">Película</a></li>
+            <li><a href="../page/Serie.html.html">Serie</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="../page/Puntos.html.html" class="points-button">
+                <i class="fas fa-circle-dot"></i>
+                <span>2000 puntos</span>
+            </a>
+            <div class="profile-icon">
+                <img src="../img/profile.png" alt="Perfil" width="30">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="tarjeta-main">
+        <h1>Registro de Tarjeta</h1>
+        <p>Ingresa los datos de tu tarjeta para completar la compra.</p>
+
+        <form id="registroTarjetaForm">
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+            </div>
+            <div class="form-group">
+                <label for="celular">Número de Celular</label>
+                <input type="tel" id="celular" name="celular" placeholder="123-456-7890" required>
+            </div>
+            <div class="form-group">
+                <label for="tarjeta">Número de Tarjeta</label>
+                <input type="text" id="tarjeta" name="tarjeta" placeholder="**** **** **** ****" required>
+            </div>
+            <div class="form-group">
+                <label for="vencimiento">Fecha de Vencimiento</label>
+                <input type="text" id="vencimiento" name="vencimiento" placeholder="MM/AA" required>
+            </div>
+            <div class="form-group">
+                <label for="cvc">CVC</label>
+                <input type="text" id="cvc" name="cvc" placeholder="123" required>
+            </div>
+            <button type="submit">Registrar Tarjeta</button>
+        </form>
+
+        <!-- Botón para volver -->
+        <div class="back-button-container">
+            <a href="RegistroCompra.html.html" class="back-button"><i class="fas fa-arrow-left"></i> Volver</a>
+        </div>
+    </main>
+
+    <script>
+        // Simulación de registro de tarjeta
+        document.getElementById("registroTarjetaForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Felicidades, tu compra fue exitosa!");
+            // Aquí puedes agregar lógica para guardar los datos
+        });
+    </script>
+
+</body>
+</html>

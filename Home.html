@@ -1,0 +1,160 @@
+<!-- page/Home.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmz Prime - Home</title>
+    <link rel="stylesheet" href="../estilo/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar">
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo-title">Filmz Prime</div>
+        <ul class="nav-links centered">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="Pelicula.html.html">Película</a></li>
+            <li><a href="Serie.html.html">Serie</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="Puntos.html.html" class="points-button">
+                <i class="fas fa-circle-dot"></i>
+                <span>2000 puntos</span>
+            </a>
+            <nav class="navbar">
+                <!-- ... (código anterior) ... -->
+                <div class="profile-icon" onclick="mostrarDatosUsuario()">
+                    <img src="../img/perfil.png" alt="Perfil" width="40">
+                </div>
+            </nav>
+        </div>
+    </nav>
+
+    <!-- Carrusel de Contenido -->
+    <section class="carousel-section">
+        <h2>Contenido Destacado</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1: Arcane -->
+                <div class="carousel-item active">
+                    <img src="../img/home/arcane_carrusel.png" alt="Arcane">
+                    <div class="carousel-caption">
+                        <h3>Arcane</h3>
+                        <p>Una historia de amor en tiempos difíciles.</p>
+                    </div>
+                </div>
+    
+                <!-- Slide 2: Invencible -->
+                <div class="carousel-item">
+                    <img src="../img/home/invencible_carrusel.png" alt="Invencible">
+                    <div class="carousel-caption">
+                        <h3>Invencible</h3>
+                        <p>Un héroe con un legado imparable.</p>
+                    </div>
+                </div>
+    
+                <!-- Slide 3: John Wick -->
+                <div class="carousel-item">
+                    <img src="../img/home/jhonWick_carrusel.png" alt="John Wick">
+                    <div class="carousel-caption">
+                        <h3>John Wick</h3>
+                        <p>La leyenda del sicario sin piedad.</p>
+                    </div>
+                </div>
+    
+                <!-- Slide 4: Joker -->
+                <div class="carousel-item">
+                    <img src="../img/home/joker_carrusel.png" alt="Joker">
+                    <div class="carousel-caption">
+                        <h3>Joker</h3>
+                        <p>El origen del príncipe del crimen.</p>
+                    </div>
+                </div>
+    
+                <!-- Slide 5: Rey León -->
+                <div class="carousel-item">
+                    <img src="../img/home/reyLeon_carrusel.png" alt="El Rey León">
+                    <div class="carousel-caption">
+                        <h3>El Rey León</h3>
+                        <p>El viaje épico de un rey en busca de su destino.</p>
+                    </div>
+                </div>
+    
+                <!-- Slide 6: Teveo -->
+                <div class="carousel-item">
+                    <img src="../img/home/teveo_carrusel.png" alt="Teveo">
+                    <div class="carousel-caption">
+                        <h3>Teveo</h3>
+                        <p>La leyenda del guerrero que desafió a los dioses.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="carousel-control next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+
+    
+    <!-- Sección de Actores y Directores -->
+    <section class="actors-directors-section">
+        <h2>Actores y Directores</h2>
+        <div class="actor-grid">
+            <div class="actor-card">
+                <img src="../img/actores/actor1.png" alt="Actor 1">
+                <h3>Actor 1</h3>
+            </div>
+            <div class="actor-card">
+                <img src="../img/actores/director1.png" alt="Director 1">
+                <h3>Director 1</h3>
+            </div>
+            <div class="actor-card">
+                <img src="../img/actores/actor2.png" alt="Actor 2">
+                <h3>Actor 2</h3>
+            </div>
+            <div class="actor-card">
+                <img src="../img/actores/director2.png" alt="Director 2">
+                <h3>Director 2</h3>
+            </div>
+            <div class="actor-card">
+                <img src="../img/actores/actor3.png" alt="Actor 3">
+                <h3>Actor 3</h3>
+            </div>
+            <div class="actor-card">
+                <img src="../img/actores/director3.png" alt="Director 3">
+                <h3>Director 3</h3>
+            </div>
+            <div class="actor-card">
+                <img src="../img/actores/actor4.png" alt="Actor 4">
+                <h3>Actor 4</h3>
+            </div>
+            <div class="actor-card">
+                <img src="../img/actores/actor5.png" alt="Director 4">
+                <h3>Director 4</h3>
+            </div>
+            <div class="actor-card">
+                <img src="../img/actores/actor6.png" alt="Marck ">
+                <h3>Marck Greyson </h3>
+            </div>
+            <div class="actor-card">
+                <img src="../img/actores/actor7.png" alt="Director 4">
+                <h3>Director 4</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Miniaturas -->
+    <section class="miniatures-section">
+        <div class="miniature-grid">
+            <!-- Miniaturas de películas o series -->
+        </div>
+    </section>
+
+   <script src="../js/Home.js"></script>
+</body>
+</html>
